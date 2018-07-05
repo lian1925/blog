@@ -128,7 +128,7 @@ if(isiOS){
   
   <div class="page">
       <p>你已经学会了 if 语句、函数、还有列表。让我们试着将这些知识结合起来，你将会发现我们可以实现有趣好玩的游戏。<br><a id="more"></a></p>
-<h2 id="代码练习"><a href="#代码练习" class="headerlink" title="代码练习"></a>代码练习</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> exit
+<h2 id="1-代码练习"><a href="#1-代码练习" class="headerlink" title="1 代码练习"></a>1 代码练习</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> exit
 
 <span class="token keyword">def</span> <span class="token function">gold_room</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span> <span class="token string">"This room is full of gold. How much do you take?"</span>
@@ -197,17 +197,34 @@ if(isiOS){
 
 start<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<h2 id="你应该看到的结果"><a href="#你应该看到的结果" class="headerlink" title="你应该看到的结果"></a>你应该看到的结果</h2><p>下面是我玩游戏的过程:<br>$ python lesson15.py<br>You are in a dark room.<br>There is a door to your right and left.<br>Which one do you take?<br><code>&gt; left</code><br>There is a bear here.<br>The bear has a bunch of honey.<br>The fat bear is in front of another door.<br>How are you going to move the bear?<br><code>&gt; taunt bear</code><br>The bear has moved from the door. You can go through it now.<br><code>&gt; open door</code><br>This room is full of gold.  How much do you take?<br><code>&gt; asf</code><br>Man, learn to type a number. Good job!<br>$</p>
-<h2 id="加分项"><a href="#加分项" class="headerlink" title="加分项"></a>加分项</h2><p>1、逐行读代码，关键地方加上注释<br>2、画出游戏的地图</p>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>1、为什么是 while True:?<br>这样可以创建一个无限循环。<br>2、exit(0) 有什么功能?<br>在很多类型的操作系统里,<code>exit(0)</code> 可以中断某个程序,而其中的数字参数则用来表示程序是否是碰到错误而中断。 exit(1) 表示发生了错误,而 exit(0) 则表示程序是正常退出的。</p>
+<h2 id="2-你应该看到的结果"><a href="#2-你应该看到的结果" class="headerlink" title="2 你应该看到的结果"></a>2 你应该看到的结果</h2><p>下面是我玩游戏的过程:</p>
+<pre class=" language-python"><code class="language-python">$ python lesson15<span class="token punctuation">.</span>py
+You are <span class="token keyword">in</span> a dark room<span class="token punctuation">.</span>
+There <span class="token keyword">is</span> a door to your right <span class="token operator">and</span> left<span class="token punctuation">.</span>
+Which one do you take?
+`<span class="token operator">></span> left`
+There <span class="token keyword">is</span> a bear here<span class="token punctuation">.</span>
+The bear has a bunch of honey<span class="token punctuation">.</span>
+The fat bear <span class="token keyword">is</span> <span class="token keyword">in</span> front of another door<span class="token punctuation">.</span>
+How are you going to move the bear?
+`<span class="token operator">></span> taunt bear`
+The bear has moved <span class="token keyword">from</span> the door<span class="token punctuation">.</span> You can go through it now<span class="token punctuation">.</span>
+`<span class="token operator">></span> open door`
+This room <span class="token keyword">is</span> full of gold<span class="token punctuation">.</span>  How much do you take?
+`<span class="token operator">></span> asf`
+Man<span class="token punctuation">,</span> learn to type a number<span class="token punctuation">.</span> Good job!
+$
+</code></pre>
+<h2 id="3-加分项"><a href="#3-加分项" class="headerlink" title="3 加分项"></a>3 加分项</h2><p>1、逐行读代码，关键地方加上注释<br>2、画出游戏的地图</p>
+<h2 id="4-常见问题"><a href="#4-常见问题" class="headerlink" title="4 常见问题"></a>4 常见问题</h2><p>1、为什么是 while True:?<br>这样可以创建一个无限循环。<br>2、exit(0) 有什么功能?<br>在很多类型的操作系统里,<code>exit(0)</code> 可以中断某个程序,而其中的数字参数则用来表示程序是否是碰到错误而中断。 exit(1) 表示发生了错误,而 exit(0) 则表示程序是正常退出的。</p>
 
   </div>
 </div>
 
 
 <p class="nav-foot">
-  <span class="left"><a href="/2017/11/07/python-code-17/">« 课17 Class,...</a></span>
-  <span class="right"><a href="/2017/11/07/python-code-6/">课6 提问的程序 |... »</a></span>
+  <span class="left"><a href="/2017/11/07/python-code-14/">« 课14 列表与循环 ...</a></span>
+  <span class="right"><a href="/2017/11/07/python-code-16/">课16 可爱的字典 ... »</a></span>
 </p>
 
 <!-- 文档信息 -->
@@ -361,7 +378,7 @@ start<span class="token punctuation">(</span><span class="token punctuation">)</
 
 
 <p id="info-meta" style="display:none;">
-  
+  课15 地图与游戏 | python
 </p>
 
 

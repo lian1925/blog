@@ -128,8 +128,8 @@ if(isiOS){
   
   <div class="page">
       <p>本节学习使用Python将内容写入一个文件中。<br><a id="more"></a></p>
-<h2 id="新知识"><a href="#新知识" class="headerlink" title="新知识"></a>新知识</h2><p>close–关闭文件。跟你编辑器的文件-&gt;保存..一个意思。<br>read – 读取文件内容。你可以把结果赋给一个变量。<br>readline–读取文本文件中的一行。<br>truncate–清空文件,请小心使用该命令。<br>write(stuff) – 将 stuff 写入文件。</p>
-<h2 id="代码练习"><a href="#代码练习" class="headerlink" title="代码练习"></a>代码练习</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> argv
+<h2 id="1-新知识"><a href="#1-新知识" class="headerlink" title="1 新知识"></a>1 新知识</h2><p>close–关闭文件。跟你编辑器的文件-&gt;保存..一个意思。<br>read – 读取文件内容。你可以把结果赋给一个变量。<br>readline–读取文本文件中的一行。<br>truncate–清空文件,请小心使用该命令。<br>write(stuff) – 将 stuff 写入文件。</p>
+<h2 id="2-代码练习"><a href="#2-代码练习" class="headerlink" title="2 代码练习"></a>2 代码练习</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> argv
 script<span class="token punctuation">,</span> filename <span class="token operator">=</span> argv <span class="token number">4</span>
 <span class="token keyword">print</span> <span class="token string">"We're going to erase %r."</span> <span class="token operator">%</span> filename
 <span class="token keyword">print</span> <span class="token string">"If you don't want that, hit CTRL-C (^C)."</span>
@@ -160,16 +160,32 @@ target<span class="token punctuation">.</span>write<span class="token punctuatio
 <span class="token keyword">print</span> <span class="token string">"And finally, we close it."</span>
 target<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<h2 id="你应该看到的结果"><a href="#你应该看到的结果" class="headerlink" title="你应该看到的结果"></a>你应该看到的结果</h2><p>你将看到两样东西,一样是你新脚本的输出:<br>$ python lesson9.py test.txt<br>We’re going to erase ‘test.txt’.<br>If you don’t want that, hit CTRL-C (^C).<br>If you do want that, hit RETURN.<br>?<br>Opening the file…<br>Truncating the file.  Goodbye!<br>Now I’m going to ask you for three lines.<br>line 1: To all the people out there.<br>line 2: I say I don’t like my hair.<br>line 3: I need to shave it off.<br>I’m going to write these to the file.<br>And finally, we close it.<br>$<br>接下来打开你新建的文件(我的是 test.txt )检查一下里边的内容,怎么样,不错吧?</p>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>1、找出为什么我们需要给 open 多赋予一个 ‘w’ 参数。<br>提示: open 对于文件的写入操作态度是安全第一,所以你只有特别指定以后,它才会进行写入操作。<br>2、还有哪些修饰符可以用来控制文件访问?<br>最重要的是 + 修饰符,写法就是 ‘w+’, ‘r+’, ‘a+’ ——这样的话文件将以同时读写的方式打开,而对于文件位置的使用也有些不同。</p>
+<h2 id="3-你应该看到的结果"><a href="#3-你应该看到的结果" class="headerlink" title="3 你应该看到的结果"></a>3 你应该看到的结果</h2><p>你将看到两样东西,一样是你新脚本的输出:</p>
+<pre class=" language-bash"><code class="language-bash">$ python lesson9.py test.txt
+We<span class="token string">'re going to erase '</span>test.txt<span class="token string">'.
+If you don'</span>t want that, hit CTRL-C <span class="token punctuation">(</span>^C<span class="token punctuation">)</span>.
+If you <span class="token keyword">do</span> want that, hit RETURN.
+?
+Opening the file<span class="token punctuation">..</span>.
+Truncating the file.  Goodbye<span class="token operator">!</span>
+Now I<span class="token string">'m going to ask you for three lines.
+line 1: To all the people out there.
+line 2: I say I don'</span>t like my hair.
+line 3: I need to shave it off.
+I'm going to <span class="token function">write</span> these to the file.
+And finally, we close it.
+$
+</code></pre>
+<p>接下来打开你新建的文件(我的是 test.txt )检查一下里边的内容,怎么样,不错吧?</p>
+<h2 id="4-常见问题"><a href="#4-常见问题" class="headerlink" title="4 常见问题"></a>4 常见问题</h2><p>1、找出为什么我们需要给 open 多赋予一个 ‘w’ 参数。<br>提示: open 对于文件的写入操作态度是安全第一,所以你只有特别指定以后,它才会进行写入操作。<br>2、还有哪些修饰符可以用来控制文件访问?<br>最重要的是 + 修饰符,写法就是 ‘w+’, ‘r+’, ‘a+’ ——这样的话文件将以同时读写的方式打开,而对于文件位置的使用也有些不同。</p>
 
   </div>
 </div>
 
 
 <p class="nav-foot">
-  <span class="left"><a href="/2017/11/07/python-code-8/">« 课8 读取文件 | ...</a></span>
-  <span class="right"><a href="/2017/11/07/python-code-14/">课14 列表与循环 ... »</a></span>
+  <span class="left"><a href="/2017/11/09/python-code-18/">« 课18 好玩的爬虫 ...</a></span>
+  <span class="right"><a href="#">无... »</a></span>
 </p>
 
 <!-- 文档信息 -->
@@ -323,7 +339,7 @@ target<span class="token punctuation">.</span>close<span class="token punctuatio
 
 
 <p id="info-meta" style="display:none;">
-  
+  课9 读写文件 | Python
 </p>
 
 

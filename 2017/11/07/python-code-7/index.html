@@ -128,8 +128,8 @@ if(isiOS){
   
   <div class="page">
       <p>本课我们将学习另外一种将变量传递给脚本的方法。你已经知道，如果要运行 lesson1.py, 只要在命令行运行：python lesson1.py 即可。<br>其实 lesson1.py 就是所谓的参数，我们现在要做的就是编写一个可以接受参数的代码。<br><a id="more"></a></p>
-<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>我们将学到如下新的命令<br>from<br>import</p>
-<h2 id="代码练习"><a href="#代码练习" class="headerlink" title="代码练习"></a>代码练习</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> argv
+<h2 id="1-知识点"><a href="#1-知识点" class="headerlink" title="1 知识点"></a>1 知识点</h2><p>我们将学到如下新的命令<br>from<br>import</p>
+<h2 id="2-代码练习"><a href="#2-代码练习" class="headerlink" title="2 代码练习"></a>2 代码练习</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sys <span class="token keyword">import</span> argv
 script<span class="token punctuation">,</span> user_name <span class="token operator">=</span> argv
 prompt <span class="token operator">=</span> <span class="token string">'> '</span>
 
@@ -150,17 +150,29 @@ You live in %r.  Not sure where that is.
 And you have a %r computer.  Nice.
 """</span> <span class="token operator">%</span> <span class="token punctuation">(</span>likes<span class="token punctuation">,</span> lives<span class="token punctuation">,</span> computer<span class="token punctuation">)</span>
 </code></pre>
-<h2 id="你应该看到的结果"><a href="#你应该看到的结果" class="headerlink" title="你应该看到的结果"></a>你应该看到的结果</h2><p>$ python lesson7.py Zed<br>Hi Zed, I’m the ex14.py script.<br>I’d like to ask you a few questions.<br>Do you like me Zed?<br><code>&gt; yes</code><br>Where do you live Zed?<br><code>&gt; America</code><br>What kind of computer do you have?<br><code>&gt; Tandy</code><br>Alright, so you said ‘yes’ about liking me.<br>You live in ‘America’.  Not sure where that is.<br>And you have a ‘Tandy’ computer.  Nice.</p>
-<h2 id="加分项"><a href="#加分项" class="headerlink" title="加分项"></a>加分项</h2><p>1、尝试给你的脚本少于2个参数，看看输出的错误信息，试着解读它们。<br>2、给你的脚本添加一个参数，让你的程序使用到它。</p>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>1、argv 和 raw_input() 有什么不同?<br>不同点在于用户输入的时机。如果参数是在用户执行命令时就要输入,那就是 argv,如果是在 脚本运行过程中需要用户输入,那就使用 raw_input()。</p>
+<h2 id="3-你应该看到的结果"><a href="#3-你应该看到的结果" class="headerlink" title="3 你应该看到的结果"></a>3 你应该看到的结果</h2><pre class=" language-bash"><code class="language-bash">$ python lesson7.py Zed
+Hi Zed, I<span class="token string">'m the ex14.py script.
+I'</span>d like to ask you a few questions.
+Do you like me Zed?
+<span class="token variable"><span class="token variable">`</span><span class="token operator">></span> <span class="token function">yes</span><span class="token variable">`</span></span>
+Where <span class="token keyword">do</span> you live Zed?
+<span class="token variable"><span class="token variable">`</span><span class="token operator">></span> America<span class="token variable">`</span></span>
+What kind of computer <span class="token keyword">do</span> you have?
+<span class="token variable"><span class="token variable">`</span><span class="token operator">></span> Tandy<span class="token variable">`</span></span>
+Alright, so you said <span class="token string">'yes'</span> about liking me.
+You live <span class="token keyword">in</span> <span class="token string">'America'</span><span class="token keyword">.</span>  Not sure where that is.
+And you have a <span class="token string">'Tandy'</span> computer.  Nice.
+</code></pre>
+<h2 id="4-加分项"><a href="#4-加分项" class="headerlink" title="4 加分项"></a>4 加分项</h2><p>1、尝试给你的脚本少于2个参数，看看输出的错误信息，试着解读它们。<br>2、给你的脚本添加一个参数，让你的程序使用到它。</p>
+<h2 id="5-常见问题"><a href="#5-常见问题" class="headerlink" title="5 常见问题"></a>5 常见问题</h2><p>1、argv 和 raw_input() 有什么不同?<br>不同点在于用户输入的时机。如果参数是在用户执行命令时就要输入,那就是 argv,如果是在 脚本运行过程中需要用户输入,那就使用 raw_input()。</p>
 
   </div>
 </div>
 
 
 <p class="nav-foot">
-  <span class="left"><a href="/2017/11/07/python-code-10/">« 课10 认识函数 |...</a></span>
-  <span class="right"><a href="/2017/11/07/python-code-12/">课12 逻辑关系 |... »</a></span>
+  <span class="left"><a href="/2017/11/07/python-code-6/">« 课6 提问的程序 |...</a></span>
+  <span class="right"><a href="/2017/11/07/python-code-8/">课8 读取文件 | ... »</a></span>
 </p>
 
 <!-- 文档信息 -->
@@ -314,7 +326,7 @@ And you have a %r computer.  Nice.
 
 
 <p id="info-meta" style="display:none;">
-  
+  课7 参数传递 | Python
 </p>
 
 

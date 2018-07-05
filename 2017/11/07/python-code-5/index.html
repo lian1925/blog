@@ -128,8 +128,8 @@ if(isiOS){
   
   <div class="page">
       <p>在编程中，有一些字符是很难打印出来的，比如单引号<code>&#39;</code>和双引号<code>&quot;</code>。想象你要打印：’I’m a student.’这时python会理解错误，以为单引号是字符串的边界。<br>为了解决这个问题，Python引入了转义字符。<br><a id="more"></a></p>
-<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>我们将会学习常用的转义字符，花点时间记住它们。<br><code>\&#39;</code><br><code>\&quot;</code><br><code>\n</code><br><code>\r</code><br><code>\t</code></p>
-<h2 id="代码练习"><a href="#代码练习" class="headerlink" title="代码练习"></a>代码练习</h2><pre class=" language-python"><code class="language-python">tabby_cat <span class="token operator">=</span> <span class="token string">"\tI'm tabbed in."</span>
+<h2 id="1-知识点"><a href="#1-知识点" class="headerlink" title="1 知识点"></a>1 知识点</h2><p>我们将会学习常用的转义字符，花点时间记住它们。<br><code>\&#39;</code><br><code>\&quot;</code><br><code>\n</code><br><code>\r</code><br><code>\t</code></p>
+<h2 id="2-代码练习"><a href="#2-代码练习" class="headerlink" title="2 代码练习"></a>2 代码练习</h2><pre class=" language-python"><code class="language-python">tabby_cat <span class="token operator">=</span> <span class="token string">"\tI'm tabbed in."</span>
 persian_cat <span class="token operator">=</span> <span class="token string">"I'm split\non a line."</span>
 backslash_cat <span class="token operator">=</span> <span class="token string">"I'm \\ a \\ cat."</span>
 
@@ -145,22 +145,29 @@ I'll do a list:
 <span class="token keyword">print</span> backslash_cat
 <span class="token keyword">print</span> fat_cat
 </code></pre>
-<h2 id="你应该看到的结果"><a href="#你应该看到的结果" class="headerlink" title="你应该看到的结果"></a>你应该看到的结果</h2><p>注意你打印出来的制表符,这节练习中的文字间隔对于答案的正确性是很重要的。<br>$ python lesson5.py<br>       I’m tabbed in.<br>I’m split<br>on a line.<br>I’m \ a \ cat.<br>I’ll do a list:</p>
-<pre><code>   * Cat food
-   * Fishies
-   * Catnip
-   * Grass
-</code></pre><p>$</p>
-<h2 id="加分项"><a href="#加分项" class="headerlink" title="加分项"></a>加分项</h2><p>1、将转义字符抄在卡片上，记住它们的作用。<br>2、记得格式化字符串 %r 和%s吗？配合转义字符打印字符串，比较一下它们的区别。</p>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>1、为什么使用%r，转义字符失效？<br>因为%r将打印原始的字符串。如果需要转义效果，使用%s。记住：<code>%r</code>用于debug，<code>%s</code>用于显示。</p>
+<h2 id="3-你应该看到的结果"><a href="#3-你应该看到的结果" class="headerlink" title="3 你应该看到的结果"></a>3 你应该看到的结果</h2><p>注意你打印出来的制表符,这节练习中的文字间隔对于答案的正确性是很重要的。</p>
+<pre class=" language-python"><code class="language-python">$ python lesson5<span class="token punctuation">.</span>py
+       I'm tabbed <span class="token keyword">in</span><span class="token punctuation">.</span>
+I'm split
+on a line<span class="token punctuation">.</span>
+I'm \ a \ cat<span class="token punctuation">.</span>
+I'll do a list<span class="token punctuation">:</span>
+       <span class="token operator">*</span> Cat food
+       <span class="token operator">*</span> Fishies
+       <span class="token operator">*</span> Catnip
+       <span class="token operator">*</span> Grass
+$
+</code></pre>
+<h2 id="4-加分项"><a href="#4-加分项" class="headerlink" title="4 加分项"></a>4 加分项</h2><p>1、将转义字符抄在卡片上，记住它们的作用。<br>2、记得格式化字符串 %r 和%s吗？配合转义字符打印字符串，比较一下它们的区别。</p>
+<h2 id="5-常见问题"><a href="#5-常见问题" class="headerlink" title="5 常见问题"></a>5 常见问题</h2><p>1、为什么使用%r，转义字符失效？<br>因为%r将打印原始的字符串。如果需要转义效果，使用%s。记住：<code>%r</code>用于debug，<code>%s</code>用于显示。</p>
 
   </div>
 </div>
 
 
 <p class="nav-foot">
-  <span class="left"><a href="/2017/11/07/python-code-2/">« 课2 注释和#号 |...</a></span>
-  <span class="right"><a href="/2017/11/07/python-code/">课0 准备工作 | ... »</a></span>
+  <span class="left"><a href="/2017/11/07/python-code-4/">« 课4 认识变量 | ...</a></span>
+  <span class="right"><a href="/2017/11/07/python-code-6/">课6 提问的程序 |... »</a></span>
 </p>
 
 <!-- 文档信息 -->
