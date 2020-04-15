@@ -1,7 +1,7 @@
 var pub_img_current_image;
 
 function backgroundImage() {
-  pub_img_path = 'http://www.liangyl.com/art_image2/';
+  pub_img_path = 'http://www.liangyl.xyz/art_image2/';
   var pub_img_num = 55;
   var pub_img_current_no = function() {
     return Math.floor(Math.random() * pub_img_num + 1);
